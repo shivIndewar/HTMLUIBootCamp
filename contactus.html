@@ -37,11 +37,11 @@
 
             <form action="mail.php" method="post">
                 <div class="intuptWrapper">
-                    <label for="name">First  Name</label>
+                    <label for="name" class="newline">First  Name</label>
                     <input type="text" name="name" id="name" placeholder="First Name">
                 </div>
                 <div class="intuptWrapper">
-                    <label for="email">Email</label>
+                    <label for="email" class="newline">Email</label>
                     <input type="text" name="email" id="email" placeholder="email">
                 </div>
                 <div class="intuptWrapper">
@@ -52,12 +52,25 @@
                     <label for="email-sub">Sign Up For Email Newsletters</label>
                 </div>
                 <div class="intuptWrapper">
-                    <input type="radio" name="contact-pref" id="phone" value="yes-sign-me-up">
-                    <input type="radio" name="contact-pref" id="phone" value="yes-sign-me-up">
+                    <p>How would you like to be contacted?</p>
+                    <input type="radio" name="contact-pref" id="phone" value="phone">
+                    <label for="phone">Phone</label>
+                    <input type="radio" name="contact-pref" id="email2" value="email">
+                    <label for="email2">Email</label>
                 </div>
                 
+                <div class="intuptWrapper">
+                    <select name="country" id="country">
+                        <option value="India">Choose country</option>
+                        <option value="India">India</option>
+                        <option value="UK">UK</option>
+                        <option value="US">US</option>
+                        <option value="SL">SL</option>
+                    </select>
+                </div>
 
-                <input type="submit" value="Fire Away">
+                <input class="mybutton" type="submit" value="Fire Away">
+
             </form>
 
         </div>
